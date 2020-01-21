@@ -1,0 +1,6 @@
+plugin:
+    name: 'jagu.krupaarchitekti::lang.plugin.name'
+    description: 'jagu.krupaarchitekti::lang.plugin.description'
+    author: 'Jagu s.r.o.'
+    icon: oc-icon-pencil-square-o
+    homepage: ''
