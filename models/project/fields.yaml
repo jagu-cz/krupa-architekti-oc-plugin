@@ -50,7 +50,6 @@ tabs:
                                 vertical_align:
                                     label: Vertikální zarovnání
                                     type: balloon-selector
-                                    span: left
                                     default: 'align-self-start'
                                     options:
                                         'align-self-start': Nahoru
@@ -59,7 +58,6 @@ tabs:
                                 left_margin:
                                     label: Odsazení vlevo
                                     type: balloon-selector
-                                    span: right
                                     default: ''
                                     options:
                                         '': Žádné
@@ -69,9 +67,8 @@ tabs:
                                         'pl-md-4 pl-sm-0': Větší
                                         'pl-md-5 pl-sm-0': Největší
                                 right_margin:
-                                    label: Odsazení vlevo
+                                    label: Odsazení vpravo
                                     type: balloon-selector
-                                    span: left
                                     default: ''
                                     options:
                                         '': Žádné
@@ -83,7 +80,6 @@ tabs:
                                 content_type:
                                     label: Druh obsahu
                                     type: balloon-selector
-                                    span: right
                                     default: 'image'
                                     options:
                                         'image': Obrázek
