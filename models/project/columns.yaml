@@ -27,3 +27,7 @@ columns:
         label: Počet fotografií
         type: number
         visible: true
+    text_count:
+        label: Počet textů
+        type: number
+        visible: true
