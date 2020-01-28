@@ -6,28 +6,28 @@ columns:
     created_at:
         label: Vytvořeno
         type: datetime
-        visible: true
+        invisible: false
     updated_at:
         label: Upraveno
         type: datetime
-        visible: true
+        invisible: false
     title:
         label: Název
         type: text
-        visible: true
+        invisible: false
     description:
         label: Popis
         type: text
-        visible: false
+        invisible: true
     slug:
         label: URL parametr
         type: text
-        visible: false
+        invisible: true
     photos_count:
         label: Počet fotografií
         type: number
-        visible: true
+        invisible: false
     text_count:
         label: Počet textů
         type: number
-        visible: true
+        invisible: false
