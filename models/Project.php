@@ -8,6 +8,9 @@ class Project extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\Sluggable;
+    use \October\Rain\Database\Traits\Sortable;
+
+    public const SORT_ORDER = 'sort_order';
 
     public $table = 'jagu_krupaarchitekti_projects';
 

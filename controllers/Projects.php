@@ -14,7 +14,7 @@ class Projects extends Controller
     public $implement = [
         'Backend.Behaviors.FormController',
         'Backend.Behaviors.ListController',
-        // 'Backend.Behaviors.ReorderController', TODO
+        'Backend.Behaviors.ReorderController'
     ];
 
     public function __construct()

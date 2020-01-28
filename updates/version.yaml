@@ -3,3 +3,6 @@
 1.0.2:
     - Initial database structure.
     - initial_database_structure.php
+1.0.3:
+    - Reorder projects
+    - reorder_projects.php

@@ -17,6 +17,6 @@ class Gallery extends ComponentBase
 
     public function projects()
     {
-        return Project::all();
+        return Project::orderBy('sort_order', 'asc')->get();
     }
 }

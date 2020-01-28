@@ -16,3 +16,6 @@ recordUrl: jagu/krupaarchitekti/projects/update/:id
 
 # Show button to show/hide columns
 showSetup: true
+
+# Default order attribute
+defaultSort: sort_order

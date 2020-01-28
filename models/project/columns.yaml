@@ -6,10 +6,14 @@ columns:
     created_at:
         label: Vytvořeno
         type: datetime
-        invisible: false
+        invisible: true
     updated_at:
         label: Upraveno
         type: datetime
+        invisible: true
+    sort_order:
+        label: Pořadí
+        type: number
         invisible: false
     title:
         label: Název
