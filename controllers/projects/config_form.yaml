@@ -6,3 +6,11 @@ name: Projekt
 form: $/jagu/krupaarchitekti/models/project/fields.yaml
 modelClass: Jagu\KrupaArchitekti\Models\Project
 defaultRedirect: jagu/krupaarchitekti/projects
+
+create:
+    redirect: jagu/krupaarchitekti/projects/update/:id
+    redirectClose: jagu/krupaarchitekti/projects
+
+update:
+    redirect: jagu/krupaarchitekti/projects/update/:id
+    redirectClose: jagu/krupaarchitekti/projects
