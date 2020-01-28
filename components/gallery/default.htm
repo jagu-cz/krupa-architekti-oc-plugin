@@ -1,0 +1,14 @@
+<div class="gallery">
+    <div class="row">
+        {% for item in gallery.projects %}
+            <div class="col-sm-12 col-md-6 col-lg-4 gallery-item">
+                <a href="{{ 'project'|page({slug: item.slug}) }}">
+                    <div class="gallery-thumbnail"
+                         style="background-image: url('{{ item.cover_image|media }}')"
+                    ></div>
+                </a>
+                <h5>{{ item.title }}</h5>
+            </div>
+        {% endfor %}
+    </div>
+</div>

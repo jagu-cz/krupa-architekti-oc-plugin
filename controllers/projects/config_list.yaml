@@ -1,0 +1,18 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+# Name
+title: Projekt
+
+# Model List Column configuration
+list: $/jagu/krupaarchitekti/models/project/columns.yaml
+
+# Model Class name
+modelClass: Jagu\KrupaArchitekti\Models\Project
+
+# Define url to edit lecturer
+recordUrl: jagu/krupaarchitekti/projects/update/:id
+
+# Show button to show/hide columns
+showSetup: true

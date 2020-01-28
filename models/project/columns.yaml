@@ -1,0 +1,29 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+    created_at:
+        label: Vytvořeno
+        type: datetime
+        visible: true
+    updated_at:
+        label: Upraveno
+        type: datetime
+        visible: true
+    title:
+        label: Název
+        type: text
+        visible: true
+    description:
+        label: Popis
+        type: text
+        visible: false
+    slug:
+        label: URL parametr
+        type: text
+        visible: false
+    photos_count:
+        label: Počet fotografií
+        type: number
+        visible: true

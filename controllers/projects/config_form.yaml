@@ -1,0 +1,8 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Projekt
+form: $/jagu/krupaarchitekti/models/project/fields.yaml
+modelClass: Jagu\KrupaArchitekti\Models\Project
+defaultRedirect: jagu/krupaarchitekti/projects

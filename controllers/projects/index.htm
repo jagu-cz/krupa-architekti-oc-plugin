@@ -1,0 +1,18 @@
+<?php Block::put('breadcrumb') ?>
+<ul>
+    <li><a href="<?= Backend::url('jagu/krupaarchitekti') ?>">Krůpa Architekti</a></li>
+    <li><?= e(trans($this->pageTitle)) ?></li>
+</ul>
+<?php Block::endPut() ?>
+
+<div class="form-buttons">
+    <a href="<?= Backend::url('jagu/krupaarchitekti/projects/create') ?>" type="button" class="btn btn-default">
+        Nový projekt
+    </a>
+
+    <a href="<?= Backend::url('jagu/krupaarchitekti/projects/reorder') ?>" type="button" class="btn btn-default">
+        Změnit pořadí
+    </a>
+</div>
+
+<?= $this->listRender() ?>

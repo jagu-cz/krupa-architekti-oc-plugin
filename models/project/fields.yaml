@@ -1,0 +1,21 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        title:
+            tab: Projekt
+            label: Název
+            placeholder: Název
+            type: text
+        description:
+            tab: Projekt
+            label: Popis
+            placeholder: Popis
+            type: richeditor
+        cover_image:
+            tab: Projekt
+            label: Titulní fotografie projektu
+            type: mediafinder
+            mode: image

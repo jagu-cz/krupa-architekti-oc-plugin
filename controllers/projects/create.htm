@@ -1,0 +1,46 @@
+<?php Block::put('breadcrumb') ?>
+<ul>
+    <li><a href="<?= Backend::url('jagu/krupaarchitekti') ?>">Krůpa Architekti</a></li>
+    <li><a href="<?= Backend::url('jagu/krupaarchitekti/projects') ?>">Projekty</a></li>
+    <li><?= e(trans($this->pageTitle)) ?></li>
+</ul>
+<?php Block::endPut() ?>
+
+<?= Form::open(['class'=>'layout']) ?>
+
+<div class="layout-row">
+    <?= $this->formRender() ?>
+</div>
+
+<div class="form-buttons">
+    <div class="loading-indicator-container">
+        <button type="button"
+                data-request="onSave"
+                data-request-data="close:false"
+                data-hotkey="ctrl+s, cmd+s"
+                data-load-indicator="Ukládám ..."
+                class="btn btn-primary"
+        >
+            Uložit
+        </button>
+
+        <button type="button"
+                data-request="onSave"
+                data-request-data="close:true"
+                data-hotkey="ctrl+enter, cmd+enter"
+                data-load-indicator="Ukládám ..."
+                class="btn btn-default"
+        >
+            Uložit a zavřít
+        </button>
+
+        <span class="btn-text">
+            nebo
+            <a href="<?= Backend::url('chc/chc/languages') ?>">
+                Zrušit
+            </a>
+        </span>
+    </div>
+</div>
+
+<?= Form::close() ?>
