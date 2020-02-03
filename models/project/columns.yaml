@@ -35,3 +35,7 @@ columns:
         label: Počet textů
         type: number
         invisible: false
+    video_count:
+        label: Počet videí
+        type: number
+        invisible: false

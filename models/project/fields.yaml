@@ -83,6 +83,7 @@ tabs:
                                     default: 'image'
                                     options:
                                         'image': Obrázek
+                                        'video': Video
                                         'text': Text
                                 # Text
                                 content_text:
@@ -101,3 +102,12 @@ tabs:
                                         action: show
                                         field: content_type
                                         condition: value[image]
+                                # Video
+                                content_video:
+                                    label: Video
+                                    type: mediafinder
+                                    mode: file
+                                    trigger:
+                                        action: show
+                                        field: content_type
+                                        condition: value[video]

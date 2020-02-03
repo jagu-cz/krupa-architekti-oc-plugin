@@ -30,37 +30,37 @@ class Project extends Model
 
     public function getPhotosCountAttribute()
     {
-        $count = 0;
+        return $this->getMediaCountByContentType('image');
+    }
 
-        foreach ($this->data as $row) {
-            foreach ($row['columns'] as $column) {
-                if ($column['content_type'] === 'image') {
-                    $count += 1;
-                }
-            }
-        }
-
-        return $count;
+    public function getVideoCountAttribute()
+    {
+        return $this->getMediaCountByContentType('video');
     }
 
     public function getTextCountAttribute()
     {
-        $count = 0;
-
-        foreach ($this->data as $row) {
-            foreach ($row['columns'] as $column) {
-                if ($column['content_type'] === 'text') {
-                    $count += 1;
-                }
-            }
-        }
-
-        return $count;
+        return $this->getMediaCountByContentType('text');
     }
 
     public function beforeSave()
     {
         $this->slug = null;
         $this->slugAttributes();
+    }
+
+    private function getMediaCountByContentType($contentType)
+    {
+        $count = 0;
+
+        foreach ($this->data as $row) {
+            foreach ($row['columns'] as $column) {
+                if ($column['content_type'] === $contentType) {
+                    $count += 1;
+                }
+            }
+        }
+
+        return $count;
     }
 }
