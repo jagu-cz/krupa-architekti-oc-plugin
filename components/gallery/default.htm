@@ -2,7 +2,7 @@
     <div class="row">
         {% for item in gallery.projects %}
             <div class="col-sm-12 col-md-6 col-lg-4 gallery-item">
-                <a href="{{ 'project'|page({slug: item.slug}) }}">
+                <a href="{{ 'project'|page({slug: item.slug}) }}" class="fancy-hover-cursor">
                     <div class="gallery-thumbnail"
                          style="background-image: url('{{ item.cover_image|media }}')"
                     ></div>
