@@ -4,6 +4,11 @@
 
 tabs:
     fields:
+        # Project section
+        project_section:
+            tab: Projekt
+            label: Projekt
+            type: section
         title:
             tab: Projekt
             label: Název
@@ -19,6 +24,27 @@ tabs:
             label: Titulní fotografie projektu
             type: mediafinder
             mode: image
+        # Appearance section
+        appearance_section:
+            tab: Vzhled
+            label: Vzhled
+            type: section
+        layout:
+            tab: Vzhled
+            label: Vzhled horního menu
+            type: dropdown
+            default: 'dark-dynamic'
+            options:
+                'dark-dynamic': Tmavé pozadí menu, světlý text, při nascrollování nahoru text ztmavne
+                'light-dynamic': Svtlé pozadí menu, tmavý text, při nascrollování nahoru text zesvětlá
+                'dark': Tmavé pozadí menu, světlý text
+                'light': Světlé pozadí menu, tmavý text
+
+        # Data section
+        data_section:
+            tab: Obsah
+            label: Obsah
+            type: section
         data:
             tab: Obsah
             type: repeater
