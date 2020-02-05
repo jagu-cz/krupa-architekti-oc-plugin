@@ -20,5 +20,5 @@
 1.0.9:
     - Small improvements
 1.0.10:
-    - Projects customizable layout
+    - Dynamic layouts
     - projects_layout_attribute.php
