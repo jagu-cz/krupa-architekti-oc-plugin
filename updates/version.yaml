@@ -22,3 +22,6 @@
 1.0.10:
     - Dynamic layouts
     - projects_layout_attribute.php
+1.0.11:
+    - Full width attribute
+    - full_width_attribute.php

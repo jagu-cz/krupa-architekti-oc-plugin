@@ -39,6 +39,11 @@ tabs:
                 'light-dynamic': Svtlé pozadí menu, tmavý text, při nascrollování nahoru text zesvětlá
                 'dark': Tmavé pozadí menu, světlý text
                 'light': Světlé pozadí menu, tmavý text
+        full_width:
+            tab: Vzhled
+            label: Na celou šířku stránky
+            type: switch
+            default: true
 
         # Data section
         data_section:

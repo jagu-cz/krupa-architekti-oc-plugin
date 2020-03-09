@@ -39,3 +39,7 @@ columns:
         label: Počet videí
         type: number
         invisible: false
+    full_width:
+        label: Na celou šířku stránky
+        type: switch
+        invisible: true
