@@ -4,7 +4,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4 gallery-item">
                 <a href="{{ 'project'|page({slug: item.slug}) }}" class="fancy-hover-cursor">
                     <div class="gallery-thumbnail"
-                         style="background-image: url('{{ item.cover_image|media }}')"
+                         style="background-image: url('{{ item.cover_image|media|resize(800, false, { quality: '50'}) }}')"
                     ></div>
                 </a>
                 <h5>{{ item.title }}</h5>
