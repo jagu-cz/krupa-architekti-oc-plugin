@@ -18,10 +18,6 @@ class Project extends Model
 
     protected $jsonable = ['data'];
 
-    public $attachOne = [
-        'cover_photo' => \System\Models\File::class
-    ];
-
     public $rules = [
         'title' => 'required',
         'description' => 'required',
