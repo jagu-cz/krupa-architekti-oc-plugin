@@ -72,12 +72,18 @@ tabs:
                                     type: balloon-selector
                                     default: 'col-lg-12 col-md-12 col-sm-12'
                                     options:
+                                        'col-lg-1 col-md-6 col-sm-12': 1/12 šířky řádku
+                                        'col-lg-2 col-md-6 col-sm-12': 2/12 šířky řádku
+                                        'col-lg-3 col-md-6 col-sm-12': 3/12 šířky řádku
+                                        'col-lg-4 col-md-6 col-sm-12': 4/12 šířky řádku
+                                        'col-lg-5 col-md-6 col-sm-12': 5/12 šířky řádku
+                                        'col-lg-6 col-md-6 col-sm-12': 6/12 šířky řádku
+                                        'col-lg-7 col-md-12 col-sm-12': 7/12 šířky řádku
+                                        'col-lg-8 col-md-12 col-sm-12': 8/12 šířky řádku
+                                        'col-lg-9 col-md-12 col-sm-12': 9/12 šířky řádku
+                                        'col-lg-10 col-md-12 col-sm-12': 10/12 šířky řádku
+                                        'col-lg-11 col-md-12 col-sm-12': 11/12 šířky řádku
                                         'col-lg-12 col-md-12 col-sm-12': Celá šířka řádku
-                                        'col-lg-6 col-md-6 col-sm-12': 1/2 šířky řádku
-                                        'col-lg-4 col-md-6 col-sm-12': 1/3 šířky řádku
-                                        'col-lg-3 col-md-6 col-sm-12': 1/4 šířky řádku
-                                        'col-lg-8 col-md-6 col-sm-12': 2/3 šířky řádku
-                                        'col-lg-9 col-md-6 col-sm-12': 3/4 šířky řádku
                                 vertical_align:
                                     label: Vertikální zarovnání
                                     type: balloon-selector
