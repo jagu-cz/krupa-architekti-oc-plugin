@@ -4,6 +4,7 @@ namespace Jagu\KrupaArchitekti\Controllers;
 
 use Backend\Classes\Controller;
 use Backend\Facades\BackendMenu;
+use Illuminate\Support\Facades\Lang;
 
 class Index extends Controller
 {
@@ -15,6 +16,6 @@ class Index extends Controller
 
     public function index()
     {
-        $this->pageTitle = 'Krůpa Architekti';
+        $this->pageTitle = Lang::get('jagu.krupaarchitekti::lang.plugin.name');
     }
 }
