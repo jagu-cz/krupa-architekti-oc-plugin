@@ -17,7 +17,7 @@ class Plugin extends PluginBase
         return [
             'krupaarchitekti' => [
                 'label' => 'jagu.krupaarchitekti::lang.plugin.name',
-                'url' => Backend::url('jagu/krupaarchitekti'),
+                'url' => Backend::url('jagu/krupaarchitekti/projects'),
                 'icon' => 'icon-home',
                 'sideMenu' => [
                     'projects' => [
