@@ -40,6 +40,10 @@ columns:
         type: number
         invisible: false
     full_width:
-        label: Na celou šířku stránky
+        label: Obsah na celou šířku stránky
+        type: switch
+        invisible: true
+    header_image_fit_height:
+        label: Úvodní fotografii přizpůsobit výšce
         type: switch
         invisible: true

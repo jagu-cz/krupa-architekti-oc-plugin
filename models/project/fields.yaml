@@ -41,7 +41,12 @@ tabs:
                 'light': Světlé pozadí menu, tmavý text
         full_width:
             tab: Vzhled
-            label: Na celou šířku stránky
+            label: Obsah na celou šířku stránky
+            type: switch
+            default: true
+        header_image_fit_height:
+            tab: Vzhled
+            label: Úvodní fotografii přizpůsobit výšce
             type: switch
             default: true
 

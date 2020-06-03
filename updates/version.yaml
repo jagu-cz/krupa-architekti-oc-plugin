@@ -27,3 +27,6 @@
     - full_width_attribute.php
 1.0.12:
     - Image thumbnails
+1.0.13:
+    - Header image fit height attribute
+    - header_image_fit_height_attribute.php
