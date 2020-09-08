@@ -19,6 +19,10 @@ columns:
         label: Název
         type: text
         invisible: false
+    caption:
+        label: Podnadpis
+        type: text
+        invisible: true
     description:
         label: Popis
         type: text

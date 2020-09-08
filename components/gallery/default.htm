@@ -8,6 +8,9 @@
                     ></div>
                 </a>
                 <h5>{{ item.title }}</h5>
+                {% if item.caption %}
+                    <p class="caption">{{  item.caption }}</p>
+                {% endif %}
             </div>
         {% endfor %}
     </div>

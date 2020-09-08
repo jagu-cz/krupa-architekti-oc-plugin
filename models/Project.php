@@ -20,6 +20,7 @@ class Project extends Model
 
     public $rules = [
         'title' => 'required',
+        'caption' => '',
         'description' => 'required',
         'cover_image' => 'required',
     ];
