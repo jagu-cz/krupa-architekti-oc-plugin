@@ -27,6 +27,11 @@ columns:
         label: Popis
         type: text
         invisible: true
+    tags:
+        label: Štítky
+        relation: tags
+        select: name
+        invisible: true
     slug:
         label: URL parametr
         type: text

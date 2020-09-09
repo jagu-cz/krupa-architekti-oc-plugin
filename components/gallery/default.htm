@@ -1,7 +1,26 @@
 <div class="gallery">
+    <div class="tag-button-list row">
+        <div class="col-12">
+            {% for tag in gallery.tags %}
+                <button onclick="toggleSelectedTag('{{ tag.name }}')"
+                        data-tag="{{ tag.name }}"
+                        class="tag-button"
+                >
+                    {{ tag.name }}
+                </button>
+            {% endfor %}
+        </div>
+    </div>
     <div class="row">
         {% for item in gallery.projects %}
-            <div class="col-sm-12 col-md-4 gallery-item">
+            {% set tagsString = '' %}
+            {% for tag in item.tags %}
+                {% if not loop.first %}
+                    {% set tagsString = tagsString ~ ',' %}
+                {% endif %}
+                {% set tagsString  = tagsString ~ tag.name %}
+            {% endfor %}
+            <div class="col-sm-12 col-md-4 gallery-item" data-tags="{{ tagsString }}">
                 <a href="{{ 'project'|page({slug: item.slug}) }}" class="fancy-hover-cursor">
                     <div class="gallery-thumbnail"
                          style="background-image: url('{{ item.cover_image|media|resize(700, false, { quality: '70'}) }}')"
@@ -9,7 +28,9 @@
                 </a>
                 <h5>{{ item.title }}</h5>
                 {% if item.caption %}
-                    <p class="caption">{{  item.caption }}</p>
+                    <p class="caption">
+                        {{ item.caption }}
+                    </p>
                 {% endif %}
             </div>
         {% endfor %}

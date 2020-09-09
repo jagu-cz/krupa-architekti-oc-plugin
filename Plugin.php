@@ -1,10 +1,18 @@
 <?php namespace Jagu\KrupaArchitekti;
 
+use Event;
 use Backend;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
 {
+    public function boot()
+    {
+        Event::listen('cms.page.beforeDisplay', function ($controller, $action, $params) {
+            $controller->addJs('/plugins/jagu/krupaarchitekti/assets/js/tags.js');
+        });
+    }
+
     public function registerComponents()
     {
         return [
