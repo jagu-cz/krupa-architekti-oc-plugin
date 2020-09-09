@@ -35,6 +35,11 @@ class Plugin extends PluginBase
                         'url' => Backend::url('jagu/krupaarchitekti/projects')
                     ]
                 ]
+            ],
+            'customizetheme' => [
+                'label' => 'Úprava šablony',
+                'url' => Backend::url('/cms/themeoptions/update/jagu-krupa-architekti-jagu-oc-theme'),
+                'icon' => 'icon-paint-brush'
             ]
         ];
     }
