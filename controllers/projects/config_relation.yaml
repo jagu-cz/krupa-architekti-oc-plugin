@@ -1,0 +1,12 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+tags:
+    label: štítek
+    manage:
+        form: $/jagu/krupaarchitekti/models/tag/fields.yaml
+        list: $/jagu/krupaarchitekti/models/tag/columns.yaml
+    view:
+        list: $/jagu/krupaarchitekti/models/tag/columns.yaml
+        toolbarButtons: add|remove|create|delete

@@ -31,6 +31,16 @@ tabs:
             label: Titulní fotografie projektu
             type: mediafinder
             mode: image
+        # Tags
+        tags_section:
+            tab: Štítky
+            label: Štítky
+            type: section
+        tags:
+            tab: Štítky
+            label: Štítky
+            type: partial
+            context: update
         # Appearance section
         appearance_section:
             tab: Vzhled

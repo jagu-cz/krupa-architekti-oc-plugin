@@ -25,6 +25,15 @@ class Project extends Model
         'cover_image' => 'required',
     ];
 
+    public $belongsToMany = [
+        'tags' => [
+            Tag::class,
+            'table' => 'jagu_krupaarchitekti_project_tags_to_projects',
+            'key' => 'project_id',
+            'otherKey' => 'project_tag_id'
+        ]
+    ];
+
     public function getPhotosCountAttribute()
     {
         return $this->getMediaCountByContentType('image');

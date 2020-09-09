@@ -33,3 +33,6 @@
 1.0.14:
     - Add caption to project
     - add_caption_to_project.php
+1.0.15:
+    - Add tags to project
+    - add_tags_to_project.php

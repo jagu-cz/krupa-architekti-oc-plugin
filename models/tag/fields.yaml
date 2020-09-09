@@ -1,0 +1,8 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Štítek
+        type: text
